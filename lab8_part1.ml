@@ -243,7 +243,7 @@ MakeSafeInterval functor.
 
 module IntSafeInterval = MakeSafeInterval (struct
                                             type t = int
-                                            type compare = Stdlib.compare
+                                            let compare = Stdlib.compare
                                           end) ;;
 
 (* Now, try evaluating the following expression in the REPL:
