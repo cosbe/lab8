@@ -343,5 +343,5 @@ instead?
 
 module IntBestInterval = MakeBestInterval (struct
                                             type t = Int
-                                            type compare = Stdlib.compare
+                                            let compare = Stdlib.compare
                                           end) ;;
